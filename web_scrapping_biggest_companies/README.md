@@ -40,10 +40,8 @@ This project is a simple attempt to gather and clean data about the biggest comp
 ## 📸 Tableau Dashboard
 
 You can view the dashboard here:  
-👉 *(Add your Tableau Public link here)*
-
-Or preview it below:  
-![Tableau Dashboard Preview](tableau/dashboard.png)
+ 
+![Tableau Dashboard Preview](tableau_dashboard.png)
 
 ---
 
