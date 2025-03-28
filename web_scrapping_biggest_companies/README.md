@@ -1,7 +1,7 @@
 
 # 🏢 Largest U.S. Companies by Revenue – Web Scraping + Tableau Project
 
-This project is a simple attempt to gather and clean data about the biggest companies in the U.S. based on revenue, and then use that data in Tableau to create visualizations.
+This project is a simple attempt to gather and clean data about the 100 biggest companies in the U.S. based on revenue from Wikipedia, and then use that data in Tableau to create visualizations.
 
 ---
 
@@ -48,4 +48,4 @@ You can view the dashboard here:
 ## 📝 Notes
 
 - This project was done by a new grad as part of a data learning portfolio.
-- Main focus was to get hands-on practice with real-world data cleaning and simple dashboarding.
+- Main focus was to get hands-on practice with real-world data extraction, cleaning and simple dashboarding.
