@@ -45,11 +45,10 @@ Segment customers into distinct groups based on demographic and purchasing behav
 - 🌀 K-Means was applied to standardized data
 - 📊 Visualized clusters using scatter plots (e.g., Income vs Spending Score)
 - 🧠 Found distinct clusters with clear behavioral patterns:
-  - High income + high spending
-  - High income + low spending
-  - Low income + high spending
-  - Average earners with moderate spending
-  - Young low earners with low spending
+     - High income + high spending
+     - High income + low spending
+     - Low income + high spending
+     - Low to average income + low spending (includes young and older low earners)
 
 ---
 
