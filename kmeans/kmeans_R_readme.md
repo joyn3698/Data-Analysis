@@ -81,7 +81,7 @@ Here are the four customer groups and what businesses could offer them:
 
 - I removed extreme values in Annual Income before scaling the data.
 - I used Elbow Method to pick 4 clusters.
-- I created 3D plots to help visualize the customer groups.
+- I used Tableau to create a dashboard and stories to visualize better.
 
 ## 🛠️ Tools Used
 
