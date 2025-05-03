@@ -77,7 +77,7 @@ SELECT COUNT(*) FROM Absenteeism_at_work
 WHERE Social_smoker = 0;
 ```
 
-> Full query available in [/SQL/SQLQuery1.sql](SQL/SQLQuery1.sql)
+> Full query available in [/absenteeism_analysis.sql](/absenteeism_analysis.sql)
 
 ### 4. Connecting SQL to Power BI
 
