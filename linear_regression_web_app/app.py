@@ -5,7 +5,6 @@ import os
 model_path = os.path.join(os.path.dirname(__file__), "model.pkl")
 model = pickle.load(open(model_path, "rb"))
 
-
 st.title("Predicting Yearly Amount Spent with Linear Regression")
 st.markdown("""
 <style>
@@ -42,8 +41,6 @@ button[kind="primary"] {
 </style>
 """, unsafe_allow_html=True)
 
-
-
 left_col, right_col = st.columns([1, 2])
 
 with left_col :
@@ -61,23 +58,21 @@ with left_col :
     </div>
     """, unsafe_allow_html=True)
     
-
-
-
-
-
 with right_col:
     x1 = st.number_input("Enter the Avg session length with the stylist(30-60 minutes)", min_value=30, max_value=60, value=None)
     x2 = st.number_input("Enter the time spent on the app(minutes)", min_value=0, max_value=100, value=None)
     x3 = st.number_input("Enter the time spent on the website(minutes)", min_value=0, max_value=100, value=None)
     x4 = st.number_input("Length of membership in months(0-12)", min_value=0, max_value=12, value=None)
-
-    if st.button("OK"):
-        user_input = [[x1, x2, x3, x4]]
-        pred = model.predict(user_input)
-        st.success(f"Predicted yearly spending: ${int(round(pred[0], 0))}")
-
-
-
-
+    
+    col1, col2 = st.columns([1, 2])
+    
+    with col1:
+        if st.button("OK"):
+            user_input = [[x1, x2, x3, x4]]
+            pred = model.predict(user_input)
+            st.session_state['predicted'] = int(round(pred[0], 0))
+    
+    with col2:
+        if 'predicted' in st.session_state:
+            st.success(f"Predicted yearly spending: ${st.session_state['predicted']}")
 
