@@ -62,7 +62,7 @@ with left_col :
 
 
 with right_col:
-    model = pickle.load(open("model.pkl", "rb"))
+    model = pickle.load(open("/linear_regression_web_app/model.pkl", "rb"))
     x1 = st.number_input("Enter the Avg session length with the stylist(30-60 minutes)", min_value=30, max_value=60, value=None)
     x2 = st.number_input("Enter the time spent on the app(minutes)", min_value=0, max_value=100, value=None)
     x3 = st.number_input("Enter the time spent on the website(minutes)", min_value=0, max_value=100, value=None)
