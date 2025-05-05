@@ -1,5 +1,10 @@
 import pickle
 import streamlit as st
+import os
+
+model_path = os.path.join(os.path.dirname(__file__), "model.pkl")
+model = pickle.load(open(model_path, "rb"))
+
 
 st.title("Predicting Yearly Amount Spent with Linear Regression")
 st.markdown("""
@@ -62,7 +67,6 @@ with left_col :
 
 
 with right_col:
-    model = pickle.load(open("/Data-Analysis/linear_regression_web_app/model.pkl", "rb"))
     x1 = st.number_input("Enter the Avg session length with the stylist(30-60 minutes)", min_value=30, max_value=60, value=None)
     x2 = st.number_input("Enter the time spent on the app(minutes)", min_value=0, max_value=100, value=None)
     x3 = st.number_input("Enter the time spent on the website(minutes)", min_value=0, max_value=100, value=None)
