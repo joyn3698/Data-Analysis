@@ -9,14 +9,11 @@ st.title("Predicting Yearly Amount Spent with Linear Regression")
 st.markdown("""
 <style>
 .stApp {
-    background-color: #f8f9fa;
-    color: #212529;
     font-family: 'Segoe UI', sans-serif;
     padding: 2rem;
 }
 
 h1 {
-    color: #0d6efd;
     text-align: center;
 }
 
@@ -27,15 +24,11 @@ h1 {
 
 .stNumberInput input {
     font-size: 1.5rem;
-    background-color: #ffffff;
-    color: #212529;
     border: 1px solid #ced4da;
     border-radius: 0.375rem;
 }
 
 button[kind="primary"] {
-    background-color: #0d6efd;
-    color: white;
     border-radius: 0.375rem;
 }
 </style>
