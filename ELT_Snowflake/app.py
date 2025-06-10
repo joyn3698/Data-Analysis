@@ -1,15 +1,16 @@
+# import libraries
 import streamlit as st
 import pandas as pd
 from snowflake.snowpark import Session
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-
+# set page title and themes
 st.set_page_config(page_title= "Retail Sales Dashboard")
 plt.style.use('seaborn-v0_8-whitegrid')
 sns.set_theme(style="whitegrid")
 
-
+# create a function to establish connection with Snowflake
 @st.cache_resource
 def snowflake_session():
     conn = {
@@ -24,7 +25,7 @@ def snowflake_session():
     session = Session.builder.configs(conn).create()
     return session
 
-
+# create a function to execute the query for transformed data
 def load_data(session):
     query = """
     WITH retail_sales AS(SELECT TO_DATE("Date", 'YYYY-MM-DD') AS "sale_date",
@@ -42,10 +43,11 @@ def load_data(session):
     retail = session.sql(query).to_pandas()
     return retail
 
+# load the dataframe
 df = load_data(snowflake_session())
 
 
-
+# custom CSS for styling the page
 st.markdown("""
     <style>
     html, body, [data-testid="stAppViewContainer"] {
@@ -78,6 +80,7 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
+# --- Title ---
 st.title("📊 Retail Sales Performance")
 
 # --- KPI Section ---
