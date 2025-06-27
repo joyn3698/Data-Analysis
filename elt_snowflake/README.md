@@ -90,11 +90,9 @@ streamlit run app.py
 ## 📁 Project Structure
 
 ```
-├── app.py                   # Streamlit dashboard interface
-├── snowpro.ipynb            # ELT notebook logic
-├── retail_sales_dataset.csv # Raw data file
-├── requirements.txt         # Dependencies
-└── README.md                # Project overview
+├── app.py                   
+├── snowpro.ipynb                 
+└── README.md               
 ```
 
 ---
