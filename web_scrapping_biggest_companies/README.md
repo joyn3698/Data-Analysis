@@ -47,5 +47,5 @@ You can view the dashboard here:
 
 ## 📝 Notes
 
-- This project was done by a new grad as part of a data learning portfolio.
+- This project was done by me as part of a data learning portfolio.
 - Main focus was to get hands-on practice with real-world data extraction, cleaning and simple dashboarding.
